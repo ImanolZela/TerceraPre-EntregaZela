@@ -1,0 +1,37 @@
+{% extends 'appfactory/base.html' %}
+
+{% block mainSection %}
+    <section id="cliente" class="text-center p-5">
+        <h2>Atención al Cliente</h2>
+        <p>Proporcionamos soporte dedicado para resolver todas tus consultas.</p>
+    </section>
+{% endblock  %}
+
+
+{% block formulario %}
+    <section id="cliente" class="text-center p-5">
+        <h2>Agregar Cliente</h2>
+        <form method="post" action="">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="nombreCliente">Nombre</label>
+                <input type="text" class="form-control" id="nombreCliente" name="nombreCliente" required>
+            </div>
+            <div class="form-group">
+                <label for="apellidoCliente">Apellido</label>
+                <input type="text" class="form-control" id="apellidoCliente" name="apellidoCliente" required>
+            </div>
+            <div class="form-group">
+                <label for="dniCliente">DNI</label>
+                <input type="text" class="form-control" id="dniCliente" name="dniCliente" required>
+            </div>
+            <div class="form-group">
+                <label for="emailCliente">Email</label>
+                <input type="email" class="form-control" id="emailCliente" name="emailCliente" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Agregar Cliente</button>
+        </form>
+    </section>
+{% endblock %}
+    
+    

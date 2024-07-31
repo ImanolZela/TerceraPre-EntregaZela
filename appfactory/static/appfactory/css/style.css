@@ -1,0 +1,76 @@
+.favicon {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+}
+
+#banner {
+    background-color: #6c757d;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.banner-img {
+    max-width: 50%; /* Ajusta este valor según sea necesario */
+    height: auto;
+}
+
+.section {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.section.bg-light {
+    background-color: #f8f9fa;
+}
+
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form .form-group {
+    margin-bottom: 1rem;
+}
+
+form .form-control {
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+}
+
+form .btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+form .btn:hover {
+    background-color: #0056b3;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+}

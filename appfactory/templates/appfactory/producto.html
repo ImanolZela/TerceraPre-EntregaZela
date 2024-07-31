@@ -1,0 +1,33 @@
+{% extends 'appfactory/base.html' %}
+
+{% block mainSection %}
+    <section id="producto" class="text-center p-5 bg-light">
+        <h2>Nuestros Productos</h2>
+        <p>Ofrecemos una amplia variedad de componentes y dispositivos electrónicos.</p>
+    </section>
+{% endblock  %}
+
+
+{% block formulario %}
+    <section id="producto" class="text-center p-5 bg-light">
+        <h2>Agregar Producto</h2>
+        <form method="post" action="">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="nombreProducto">Nombre del Producto</label>
+                <input type="text" class="form-control" id="nombreProducto" name="nombreProducto" required>
+            </div>
+            <div class="form-group">
+                <label for="codigoProducto">Código del Producto</label>
+                <input type="text" class="form-control" id="codigoProducto" name="codigoProducto" required>
+            </div>
+            <div class="form-group">
+                <label for="stockProducto">Stock</label>
+                <input type="number" class="form-control" id="stockProducto" name="stockProducto" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Agregar Producto</button>
+        </form>
+    </section>
+{% endblock %}
+    
+    

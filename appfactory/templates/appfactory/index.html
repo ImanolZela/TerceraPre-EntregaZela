@@ -1,0 +1,35 @@
+{% extends 'appfactory/base.html' %}
+
+
+{% block mainSection %}
+    <section id="inicio" class="text-center p-5">
+        <h1>Bienvenido a Nuestro Sitio de Electrónica</h1>
+        <p>Explora nuestros productos y servicios dedicados a la electrónica.</p>
+    </section>
+{% endblock  %}
+
+
+{% block formulario %}
+    <section id="inicio" class="text-center p-5">
+        <h2>Buscar Producto</h2>
+        <form method="post" action="">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="codigoProductoBuscar">Código del Producto</label>
+                <input type="text" class="form-control" id="codigoProductoBuscar" name="codigoProductoBuscar" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Buscar</button>
+        </form>
+        <!-- Aquí se mostrará el resultado de la búsqueda -->
+        <div id="resultadoBusqueda" class="mt-4">
+            {% if producto %}
+                <h3>Resultado de la Búsqueda</h3>
+                <p><strong>Nombre:</strong> {{ producto.nombre }}</p>
+                <p><strong>Código:</strong> {{ producto.codigo }}</p>
+                <p><strong>Stock:</strong> {{ producto.stock }}</p>
+            {% endif %}
+        </div>
+    </section>
+{% endblock %}
+    
+    
